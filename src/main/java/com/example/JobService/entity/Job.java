@@ -19,4 +19,5 @@ public class Job {
     private String location;
     private Double salary;
     private Long recruiterId;
+    private Long companyId;
 }
