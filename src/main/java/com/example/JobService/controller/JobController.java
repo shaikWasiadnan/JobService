@@ -1,5 +1,6 @@
 package com.example.JobService.controller;
 
+import com.example.JobService.dto.JobDto;
 import com.example.JobService.entity.Job;
 import com.example.JobService.service.Jobservice;
 import jakarta.ws.rs.PathParam;
@@ -23,7 +24,7 @@ public class JobController {
         return jobservice.createJob(job);
     }
     @GetMapping("/{id}")
-    public Job getJobById(@PathVariable Long id) throws Exception {
+    public JobDto getJobById(@PathVariable Long id) throws Exception {
         return jobservice.getJobById(id);
     }
 }
